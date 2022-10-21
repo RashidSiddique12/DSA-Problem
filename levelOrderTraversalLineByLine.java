@@ -6,7 +6,7 @@ import java.lang.*;
 class Node  
 { 
     int key; 
-    Node left;
+    Node left;  
     Node right;
     Node (int k){
         key = k;  

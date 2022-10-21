@@ -12,7 +12,7 @@ public class selectionSort {
             arr[i]=arr[min_ind];
             arr[min_ind]=temp;         
 
-        }
+        } 
     }
     public static void main(String[] args) {
         int arr[]={3,4,5,2,1};

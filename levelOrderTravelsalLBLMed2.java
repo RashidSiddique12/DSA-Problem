@@ -8,7 +8,7 @@ class Node{
     Node right;
     Node (int k){
         key = k;
-        left = right =null; 
+        left = right =null;   
     }
 }
 

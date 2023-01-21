@@ -36,6 +36,7 @@ public class PalindromeLinkedList {
         return true;
 
     // BETTER SOLUTION
+    // public ListNode reverse(ListNode head){
     //     ListNode prev = null;
     //     ListNode curr = head;
     //     while(curr != null)

@@ -34,6 +34,69 @@ class Solution {
 }
 
 
+
+
+// class Solution {
+
+//     class pair{
+//         int x;
+//         int y;
+//         // int col;
+//         pair(int xc,int yc){
+//             x = xc ;
+//             y = yc;
+//             // col = c;
+//         }
+//     }
+//     public int[][] floodFill(int[][] grid, int sr, int sc, int color) {
+
+//         Queue<pair> q = new ArrayDeque<>();
+//         boolean visited[][] = new boolean[grid.length][grid[0].length];
+//         q.add(new pair(sr,sc));
+//         visited[sr][sc] = true;
+//         int currCol = grid[sr][sc];
+//         grid[sr][sc] = color;
+        
+
+//         while(!q.isEmpty()){
+//             pair curr = q.poll();
+            
+//             int x = curr.x;
+//             int y = curr.y;
+//             if(x-1>=0 && x-1 <grid.length && y>=0 && y < grid[0].length &&
+//              currCol == grid[x-1][y] && visited[x-1][y] == false){
+//                  visited[x-1][y] = true;
+//                  q.add(new pair(x-1,y));
+//                  grid[x-1][y] = color;
+//             }
+//             if(x+1>=0 && x+1 <grid.length && y>=0 && y < grid[0].length&&
+//              currCol == grid[x+1][y] && visited[x+1][y] == false){
+//                  visited[x+1][y] = true;
+//                  q.add(new pair(x+1,y ));
+//                  grid[x+1][y] = color;
+//             }
+
+//             if(x>=0 && x <grid.length && y-1>=0 && y-1 < grid[0].length&&
+//              currCol == grid[x][y-1] && visited[x][y-1] == false){
+//                  visited[x][y-1] = true;
+//                  q.add(new pair(x,y-1 ));
+//                  grid[x][y-1] = color;
+//              }
+//              if(x>=0 && x <grid.length && y+1>=0 && y+1 < grid[0].length&&
+//              currCol == grid[x][y+1] && visited[x][y+1] == false){
+//                  visited[x][y+1] = true;
+//                  q.add(new pair(x,y+1 ));
+//                  grid[x][y+1] = color;
+//              }
+//         }
+//         return grid;
+//     }
+// }
+
+
+/////
+
+
 // class Solution {
 //     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
 //         int oldColor = image[sr][sc];
